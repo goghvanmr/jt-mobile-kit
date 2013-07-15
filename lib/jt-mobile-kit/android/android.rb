@@ -8,7 +8,8 @@ class Android < Thor
 
   desc "init", "create cordova based android project"
   def init
-    directory :templates, :app
+    #directory :templates, :app
+    directory :templates, "app/android"
   end
 end
 
