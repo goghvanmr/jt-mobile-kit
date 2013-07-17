@@ -1,4 +1,4 @@
-class Android < Thor
+class IOS < Thor
   include Thor::Actions
   source_root File.expand_path("../", __FILE__)
   def initialize(args=[], options={}, config={})
@@ -6,9 +6,8 @@ class Android < Thor
     self.destination_root= ""
   end
 
-  desc "init", "create cordova based android project"
+  desc "init", "create cordova based ios project"
   def init
-    directory :templates, "app/android"
+    directory :templates, "app/ios"
   end
 end
-

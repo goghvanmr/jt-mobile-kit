@@ -24,9 +24,15 @@ class ProjectCreator < Thor::Group
     end
   end
 
-  def create_app_project
+  def create_android_project
     inside @@project_name do
       run "jt_android init"
+    end
+  end
+
+  def create_ios_project
+    inside @@project_name do
+      run "jt_ios init"
     end
   end
 
